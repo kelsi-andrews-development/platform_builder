@@ -1,4 +1,6 @@
 <!-- 
+Flutter package that automatically chooses the correct widgets for Android and IOS platforms
+
 This README describes the package. If you publish this package to pub.dev,
 this README's contents appear on the landing page for your package.
 
