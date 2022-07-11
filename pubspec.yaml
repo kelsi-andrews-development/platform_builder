@@ -1,7 +1,7 @@
 name: platform_builder
-description: A new Flutter package project.
+description: Flutter package that automatically chooses the correct widgets for Android and IOS platforms.
 version: 0.0.1
-homepage:
+homepage: https://github.com/kelsi-andrews-development/platform_builder.git
 
 environment:
   sdk: ">=2.16.1 <3.0.0"
