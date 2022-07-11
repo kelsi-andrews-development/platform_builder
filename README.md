@@ -40,6 +40,7 @@ Will add longer examples to /example folder in future updates
 
 ## Additional information
 
+The Github repo can be found at [https://github.com/kelsi-andrews-development/platform_builder] 
 I'm not entirely sure the best practices for this step, will look into rather soon.
 Feel free to send an email to kelsi.andrews.development@gmail.com with issues, comments, and/or suggestions.
 More information will be added relatively soon, but feel free to send an email in the meantime.
