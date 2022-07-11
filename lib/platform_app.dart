@@ -3,13 +3,17 @@ import 'package:flutter/material.dart';
 
 import './platform_builder.dart';
 
-/// ## Both Android and IOS
-/// ---
-/// **Material's MaterialApp's documentation:**<br>
-/// ---
-/// **Cupertino's CupertinoApp's documentation:**<br>
+// ## Both Android and IOS
+// ---
+// **Material's MaterialApp's documentation:**<br>
+// ---
+// **Cupertino's CupertinoApp's documentation:**<br>
 
-/// Returns an app Widget depending on this user's devices' operating system.
+/// Returns an app Widget depending on this user's devices' operating system.<br><br>
+///
+/// See also:
+/// * [MaterialApp], Android Documentation located in file [package:flutter/material.dart]
+/// * [CupertinoApp], IOS Documentation located in file [package:flutter/cupertino.dart]
 class PlatformApp extends PlatformBuilderStatefulWidget {
   /// ## Both Android and IOS
   /// {@macro flutter.widgets.widgetsApp.navigatorKey}
@@ -476,9 +480,7 @@ class PlatformApp extends PlatformBuilderStatefulWidget {
   /// {@macro flutter.widgets.widgetsApp.useInheritedMediaQuery}
   final bool useInheritedMediaQuery;
 
-  //ios
-
-  PlatformApp({
+  const PlatformApp({
     Key? key,
     this.navigatorKey, // android and ios
     this.scaffoldMessengerKey,
@@ -504,7 +506,7 @@ class PlatformApp extends PlatformBuilderStatefulWidget {
     this.localeListResolutionCallback, // android and ios
     this.localeResolutionCallback, // android and ios
     this.supportedLocales = const <Locale>[Locale('en', 'US')], // android and ios
-    this.debugShowMaterialGrid = false, // android only
+    this.debugShowMaterialGrid = false, // android
     this.showPerformanceOverlay = false,
     this.checkerboardRasterCacheImages = false,
     this.checkerboardOffscreenLayers = false,
@@ -515,7 +517,6 @@ class PlatformApp extends PlatformBuilderStatefulWidget {
     this.restorationScopeId,
     this.scrollBehavior,
     this.useInheritedMediaQuery = false,
-    //ios
   })  : routeInformationProvider = null,
         routeInformationParser = null,
         routerDelegate = null,
@@ -531,14 +532,14 @@ class PlatformMaterialAppState extends PlatformBuilderState<PlatformApp> {
   Widget build(BuildContext context) {
     return platform
         ? MaterialApp(
-            title: "VX Alert HC",
+            title: widget.title,
             theme: widget.materialThemeData,
             initialRoute: widget.initialRoute,
             routes: widget.routes!,
             onUnknownRoute: widget.onUnknownRoute,
           )
         : CupertinoApp(
-            title: "VX Alert HC",
+            title: widget.title,
             theme: CupertinoThemeData(
               brightness: widget.materialThemeData!.brightness,
               primaryColor: widget.materialThemeData!.primaryColor,
