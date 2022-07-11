@@ -13,7 +13,7 @@ class PlatformCircularProgressIndicator extends PlatformBuilderStatefulWidget {
   final bool isAnimating;
   final double radius;
 
-  PlatformCircularProgressIndicator({
+  const PlatformCircularProgressIndicator({
     Key? key,
     this.value,
     this.backgroundColor,

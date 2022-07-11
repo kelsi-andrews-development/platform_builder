@@ -1,41 +1,45 @@
 <!-- 
-Flutter package that automatically chooses the correct widgets for Android and IOS platforms
+Flutter package that automatically chooses the correct widgets for Android and IOS platforms.
+The goal of this package is to provide widgets that use one set of parameters to build different 
+widgets since Android and IOS widgets do not maintain consistency between each other. Another goal 
+is to eliminate duplicate code and simplify platform identification while maintaining platform 
+design consistency.
 
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
-
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages). 
-
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages). 
--->
-
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
+This is a starter README.md file. More will be added in future updates.
 
 ## Features
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
+Supported Widgets (Android Support/IOS Support):
+* PlatformApp (MaterialApp/CupertinoApp)
+* PlatformAppBar (AppBar/CupertinoNavigationBar)
+* PlatformButton (ElevatedButton/CupertinoButton)
+* PlatformCircularProgressIndicator (CircularProgressIndicator/CupertinoActivityIndicator)
+* PlatformForm (Form/CupertinoFormSection)
+* PlatformFormField (TextFormField/CupertinoTextFormFieldRow)
+* PlatformScaffold (Scaffold/CupertinoPageScaffold)
+* PlatformSingleChildScrollView (Scrollbar>SingleChildScrollView/CupertinoScrollbar>SingleChildScrollView)
+
+Will add links to each widget on future updates
 
 ## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+Import the package and call any widget
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder. 
-
 ```dart
-const like = 'sample';
+PlatformApp(
+    title: "App Title",
+    materialThemeData: {themeData},
+    initialRoute: "/home"
+    },
+  );
 ```
+
+Will add longer examples to /example folder in future updates
 
 ## Additional information
 
-TODO: Tell users more about the package: where to find more information, how to 
-contribute to the package, how to file issues, what response they can expect 
-from the package authors, and more.
+I'm not entirely sure the best practices for this step, will look into rather soon.
+Feel free to send an email to kelsi.andrews.development@gmail.com with issues, comments, and/or suggestions.
+More information will be added relatively soon, but feel free to send an email in the meantime.
